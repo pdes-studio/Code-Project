@@ -1,0 +1,170 @@
+
+@font-face{
+	src: url(../css/fonts/BNT-Normal.ttf);
+	font-family: BNT-Normal;
+}
+
+@font-face{
+	src: url(../css/fonts/BNT-Oblique.ttf);
+	font-family: BNT-Oblique;
+}
+
+*{ font-family: BNT-Normal; box-sizing: border-box; list-style: none;}
+
+body{
+	overflow-x: hidden;
+}
+
+img { /* Imagem fluída */
+	display: block;
+	max-width: 100%;
+}
+
+.head{
+	height: 80px;
+	padding: 20px;
+	background: #8D00FF;
+	color: #fff;
+	font-size: 30px;
+	position: fixed;
+	width: 320px;
+}
+
+.profile-box{
+	height: 20vh;;
+	margin: 20px auto 40px auto;
+	border-radius: 6px;
+	padding: 30px 40px;
+}
+
+.user {
+	height: 80px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.user .info span{
+	font-size: 21px;
+	color: #313131;
+}
+
+.user .info .exp{
+	margin-top: 6px;
+	font-size: 18px;
+	color: #CB8BFF;
+}
+
+
+
+.profile-box .user img{ 
+	height: 80px; 
+	width: 80px; 
+	border-radius: 100%;
+	margin-right: 20px;
+}
+
+.attr{
+	margin-top: 24px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.at{
+	display: flex;
+	align-items: center;
+	color: #707070;
+}
+
+.at img{ 
+	height: 30px;
+	width: 30px;
+	border-radius: 100%;
+	border: 2px solid #ebecec; margin-right: 6px;
+}
+
+.nav{
+	position: fixed;
+	top: 80px;
+	width: 320px;
+	overflow-y: scroll;
+	bottom: 0;
+	background: #fff;
+}
+
+.nav a{
+	display: block;
+	padding: 20px 20px;
+	font-size: 24px;
+	border-top: 1px solid #ebecec;
+	border-bottom: 1px solid #ebecec;
+	font-family: BNT-Oblique;
+	color: rgba(17,17,17,.3);
+}
+
+
+.wrapper{
+	height: 100vh;
+	padding: 0px 320px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-around;
+}
+
+.wrapper .section{
+	width: 100%;
+	height: 40vh;
+	width: calc(100vw - 720px);
+	margin: 0 auto;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	border: 1px solid #ececec;
+}
+
+.wrapper .section:hover{
+	border-color: #8D00FF;
+	background: #FAF5FE;
+	transition: .5s ease-in-out;
+}
+
+.section > div{
+	height: 140px;
+	align-self: center;
+}
+
+.section h1{ 
+	font-size: 72px; 
+	font-family: BNT-Oblique;
+	color: #8D00FF;
+}
+
+.section span{
+	font-size: 48px;
+	color: #313131;
+	
+}
+
+.notification{
+	width: 320px;
+	height: 100%;
+}
+
+.notification .head{
+	height: 80px;
+	padding: 20px;
+	background: #8D00FF;
+	color: #fff;
+	font-size: 30px;
+	position: fixed;
+	width: 320px;
+	right: 0;
+	top: 0;
+}
+
+.notification .nav{
+	position: fixed;
+	right: 0;
+	border-left: 1px solid #ebecec;
+}
