@@ -89,7 +89,7 @@ img { /* Imagem fluída */
 	height: 20vh;;
 	margin: 20px auto 40px auto;
 	border-radius: 6px;
-	padding: 30px 40px;
+	padding: 30px 20px;
 }
 
 .user {
@@ -169,8 +169,12 @@ img { /* Imagem fluída */
 
 .wrapper .section:hover{
 	border-color: #8D00FF;
-	background: #FAF5FE;
+	background: #8D00FF;
 	transition: .5s ease-in-out;
+}
+
+.wrapper .section:hover h1{
+	color: #fff;
 }
 
 .section > div{
