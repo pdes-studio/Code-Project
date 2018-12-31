@@ -82,7 +82,7 @@ img { /* Imagem fluída */
 .nav a.active{
 	background: #8D00FF;
 	padding-left: 50px;
-	color: #fff;
+	color: #fff; 
 }
 
 .profile-box{
