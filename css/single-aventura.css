@@ -32,7 +32,10 @@
     cursor: pointer;
 }
 
-input{display: none;}
+.s- .module .btn-m:hover{
+    border-color: #8D00FF;
+}
+
 
 .s- .module a{
     display: block;

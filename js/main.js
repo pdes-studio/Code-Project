@@ -1,16 +1,8 @@
 
-Visibility.onVisible(function(){
-	setTimeout(function () {
-		$(".fade_esq").addClass("animated fadeInLeft");
-	}, 400);
 
-setTimeout(function () {
-    $(".fade_dir").addClass("animated fadeInRight");
-  }, 400);
+const btnMenu = document.querySelector('.btn-menu');
+const Menu = document.querySelector('.menu');
 
-
-  setTimeout(function () {
-  $(".fade_down").addClass("animated fadeInDown");
-  }, 700);
-
+btnMenu.addEventListener('click', function(){
+  const menuAtivo = Menu.classList.toggle('active');  
 });

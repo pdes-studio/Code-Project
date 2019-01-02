@@ -23,31 +23,89 @@ img { /* Imagem fluída */
 
 h1{ font-family: BNT-Oblique;}
 
+.menu .nav{
+	visibility: hidden; 
+	transition: .3s;
+	opacity: 0;
+}
+
+.menu.active .nav{
+	visibility: visible; 
+	transition: .7s;
+	opacity: 1;
+}
+
 .head{
-	height: 60px;
-	padding: 20px;
-	font-size: 21px;
+	height: 100%;
 	position: fixed;
 	width: 320px;
-	background: #f7f7f7;
 	border-right: 1px solid #ebecec;
 	border-bottom: 1px solid #ebecec;
 }
 
-.head span{
-	color: rgba(141,0,255,1);
+.head label{
+	display: block;
+	height: 60px;
+	width: 320px;
+	background: #f7f7f7;
+	border-right: 1px solid #ebecec;
+	border-bottom: 1px solid #ebecec;
+	padding: 16px 20px;
+	display: flex;
+	color: #8D00FF;
+	font-size: 24px;
+	justify-content: space-between;
 }
 
+
+input{display: none;}
+
+.btn-menu{
+	margin-top: 2px;
+	height: 32px;
+	width: 32px;
+	border-top: 3px solid #838383;
+	display: block;
+	cursor: pointer;
+}
+
+.btn-menu::after, .btn-menu::before{
+	content:'';
+	display: block;
+	height: 3px;
+	width: 32px;
+	margin-top: 5px;
+	background: #838383;
+	transition: .3s;
+}
+
+
+.menu.active .btn-menu{
+	border-top-color: transparent;
+	margin-top: 4px;
+}
+
+.menu.active .btn-menu::after{
+	margin-top: -3px;
+	transform: rotate(-45deg);
+	background: #8D00FF;
+}
+
+.menu.active .btn-menu::before{
+	margin-top: 4px;
+	transform: rotate(45deg);
+	background: #8D00FF;
+}
+
+
 .nav{
-	position: fixed;
-	top: 60px;
 	width: 320px;
 	bottom: 0;
 	background: #fff;
 	border-right: 1px inset #ebecec;
 }
 
-.nav a{
+.links a{
 	display: block;
 	padding: 20px 20px;
 	font-size: 24px;
@@ -62,7 +120,7 @@ h1{ font-family: BNT-Oblique;}
 }
 
 
-.nav a::before{
+.links a::before{
 	content: '';
 	display: block;
 	height: 100%;
@@ -71,27 +129,26 @@ h1{ font-family: BNT-Oblique;}
 	position: absolute;
 	left: 0;
 	top: 0;
-	z-index: -1;
+	z-index: 1;
 }
 
-.nav a:hover::before{
+.links a:hover::before{
 	width: 100%;
 	transition: .3s ease-out;
 }
 
-.nav a:hover{
+.links a:hover{
 	transition: all .5s;
 	padding-left: 50px;
 }
 
-.nav a.active{
+.links a.active{
 	background: #8D00FF;
 	padding-left: 50px;
 	color: #fff; 
 }
 
 .profile-box{
-	height: 20vh;;
 	margin: 20px auto 40px auto;
 	border-radius: 6px;
 	padding: 30px 20px;
@@ -106,13 +163,13 @@ h1{ font-family: BNT-Oblique;}
 
 .user .info span{
 	font-size: 21px;
-	color: #313131;
+	color: #838383;
 }
 
 .user .info .exp{
 	margin-top: 6px;
 	font-size: 18px;
-	color: #CB8BFF;
+	color: #8D00FF;
 }
 
 
@@ -133,7 +190,7 @@ h1{ font-family: BNT-Oblique;}
 .at{
 	display: flex;
 	align-items: center;
-	color: #707070;
+	color: #838383;
 }
 
 .at img{ 
