@@ -1,7 +1,9 @@
 /*Estilo para tablets*/
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-
-
+@media only screen and (min-height: 700px) and (max-height: 959px) {
+    .menu.active .head{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
 
 }
 
